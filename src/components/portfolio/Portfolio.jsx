@@ -5,6 +5,52 @@ import IMG1 from '../../assets/weather.png'
 import IMG2 from '../../assets/crypto.png'
 import IMG3 from '../../assets/codeinmind.png'
 
+
+const data = [
+  {
+    id: 1,
+    image: IMG,
+    title: 'Day Schedule',
+    github: 'https://github.com/Jenya10016/day_planner',
+    demo: 'https://jenya10016.github.io/day_planner/',
+  },
+  {
+    id: 2,
+    image: IMG1,
+    title: 'Weather App',
+    github: 'https://github.com/Jenya10016/Weather',
+    demo: 'https://jenya10016.github.io/Weather//',
+  },
+  {
+    id: 3,
+    image: IMG2,
+    title: 'Cryto & Currency',
+    github: 'http://github.com/',
+    demo: 'https://prismaticdevs.github.io/crypto-cocktails/',
+  },
+  {
+    id: 4,
+    image: IMG3,
+    title: 'Code in Mind - Education App',
+    github: 'https://github.com/Jenya10016/code_in_mind',
+    demo: 'https://code-in-mind.herokuapp.com/',
+  },
+  {
+    id: 5,
+    image: IMG,
+    title: 'Day Schedule',
+    github: 'http://github.com/',
+    demo: 'https://jenya10016.github.io/day_planner/',
+  },
+  {
+    id: 6,
+    image: IMG,
+    title: 'Day Schedule',
+    github: 'http://github.com/',
+    demo: 'https://jenya10016.github.io/day_planner/',
+  },
+]
+
 const portfolio = () => {
   return (
     <section id='portfolio'>
@@ -12,71 +58,27 @@ const portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={IMG1} alt="" />
-          </div>
-          <h3>Weather</h3>
-          <div className="portfolio__item-cta">
-            <a href="https://github.com/Jenya10016" className='btn'>Git Hub</a>
-            <a href="https://jenya10016.github.io/Weather/" className='btn btn-primary' target='_blank'>Live Demo</a>
-          </div>
-        </article>
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={IMG} alt="" />
-          </div>
-          <h3> Day Scheduler</h3>
-          <div className="portfolio__item-cta">
-            <a href="https://github.com/Jenya10016" className='btn'>Git Hub</a>
-            <a href="https://jenya10016.github.io/day_planner/"className='btn btn-primary' target='_blank'>Live Demo</a>
-          </div>
-        </article>
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={IMG3} alt="" />
-          </div>
-          <h3> Subscribe to code and teaching app</h3>
-          <div className="portfolio__item-cta">
-            <a href="https://github.com/Jenya10016" className='btn'>Git Hub</a>
-            <a href="https://code-in-mind.herokuapp.com/" className='btn btn-primary' target='_blank'>Live Demo</a>
-          </div>
-        </article>
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={IMG2} alt="" />
-          </div>
-          <h3> Crypto currency and cocktails</h3>
-          <div className="portfolio__item-cta">
-            <a href="https://github.com/Jenya10016" className='btn'>Git Hub</a>
-            <a href="https://prismaticdevs.github.io/crypto-cocktails/" className='btn btn-primary' target='_blank'>Live Demo</a>
-          </div>
-        </article>
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={IMG} alt="" />
-          </div>
-          <h3> This is a portfolio item title</h3>
-          <div className="portfolio__item-cta">
-            <a href="https://github.com" className='btn'>Git Hub</a>
-            <a href="https://jenya10016.github.io/Weather/" className='btn btn-primary' target='_blank'>Live Demo</a>
-          </div>
-        </article>
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={IMG} alt="" />
-          </div>
-          <h3> This is a portfolio item title</h3>
-          <div className="portfolio__item-cta">
-            <a href="https://github.com" className='btn'>Git Hub</a>
-            <a href="https://jenya10016.github.io/Weather/" className='btn btn-primary' target='_blank'>Live Demo</a>
-          </div>
-        </article>
+        {
+          data.map(({ id, image, title, github, demo }) => {
+            return (
+              <article key={id} className='portfolio__item'>
+                <div className="portfolio__item-image">
+                  <img src={image} alt={title} />
+                </div>
+                <h3> {title}</h3>
+                <div className="portfolio__item-cta">
+                  <a href="{github}" className='btn' target='_blank'>Git Hub</a>
+                  <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+                </div>
+              </article>
+            )
+          })
+        }
         </div>
-  
-
     </section>
   )
 }
+    
 
-export default portfolio
+
+    export default portfolio

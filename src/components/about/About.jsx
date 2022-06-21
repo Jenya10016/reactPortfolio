@@ -43,7 +43,7 @@ const about = () => {
             I am Jenya Seletsky. I have a degree in business administration from CU Denver.
             I have noticed that most companies I have worked for need web development or updates.
             After years of being a self taught developer, I decided to get my certificate in
-            Full Stack development from the University of Denver.
+            Fullstack development from the University of Denver.
             
           </p>
 

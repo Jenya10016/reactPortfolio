@@ -8,12 +8,12 @@
     background: rgb(56, 54, 54);
     padding: 1.3rem;
     border-radius: 2rem;
-    border: 1px white;
+    border: 1px solid-transparent;
     transition: var(--transition);
 }
 
-.portfolio_item:hover {
-    border-color: white;
+.portfolio__item:hover {
+    border-color: var(--color-primary-variant);
     background: transparent;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .portfolio__item h3 {
-    margin: 1.2 0 2rem;
+    margin: 1.2rem 0 2rem;
 }
 
 .portfolio__item-cta {
@@ -40,7 +40,7 @@
     }
 }   
 
-/* for small devices */
+/* ====== for small devices ======== */
 @media screen and (max-width: 600px) {
     .portfolio__container {
         grid-template-columns: 1fr;
