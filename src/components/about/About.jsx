@@ -40,7 +40,11 @@ const about = () => {
           </div>
 
           <p>
-             Illum corporis rerum eum libero praesentium facilis eligendi quas eaque qui ex pariatur est repellat, quaerat architecto reprehenderit eos dignissimos, dicta quos beatae recusandae animi necessitatibus expedita nobis tenetur! In incidunt veritatis, praesentium aperiam esse explicabo possimus quam officia consequuntur aliquid accusantium recusandae, nostrum eveniet rem doloremque, perferendis impedit laudantium fuga? Architecto illo sed delectus id pariatur nobis. Dicta quas sunt, architecto alias, fuga iure quos nihil velit voluptatem minima dolorem eligendi eos deserunt vero nemo quod mollitia debitis. Ducimus aut facere ipsam ipsum iusto, praesentium minima ea delectus quo esse. Optio.
+            I am Jenya Seletsky. I have a degree in business administration from CU Denver.
+            I have noticed that most companies I have worked for need web development or updates.
+            After years of being a self taught developer, I decided to get my certificate in
+            Full Stack development from the University of Denver.
+            
           </p>
 
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
