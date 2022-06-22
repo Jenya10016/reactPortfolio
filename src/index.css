@@ -61,7 +61,7 @@ h1 {
 
 section {
     margin-top: 8rem;
-    height: 80vh;
+    min-height: 80vh;
 }
 
 section > h2, 
