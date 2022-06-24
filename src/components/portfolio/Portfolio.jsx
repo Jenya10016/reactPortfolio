@@ -80,7 +80,7 @@ const portfolio = () => {
     </section>
   )
 }
-    
+
 
 
     export default portfolio
