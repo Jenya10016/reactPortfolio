@@ -4,6 +4,8 @@ import IMG from '../../assets/daysched.png'
 import IMG1 from '../../assets/weather.png'
 import IMG2 from '../../assets/crypto.png'
 import IMG3 from '../../assets/codeinmind.png'
+import IMG4 from '../../assets/ProjectMS.png'
+import IMG5 from '../../assets/quiz.png'
 
 
 const data = [
@@ -37,17 +39,17 @@ const data = [
   },
   {
     id: 5,
-    image: IMG,
-    title: 'Day Schedule',
-    github: 'http://github.com/',
-    demo: 'https://jenya10016.github.io/day_planner/',
+    image: IMG4,
+    title: 'Project Management',
+    github: 'https://github.com/Jenya10016/proManagementSyst',
+    demo: 'https://judo2000-project-mgnt.herokuapp.com/',
   },
   {
     id: 6,
-    image: IMG,
+    image: IMG5,
     title: 'Day Schedule',
-    github: 'http://github.com/',
-    demo: 'https://jenya10016.github.io/day_planner/',
+    github: 'https://github.com/Jenya10016/reactPortfolio',
+    demo: 'https://jenya10016.github.io/quiz/',
   },
 ]
 
